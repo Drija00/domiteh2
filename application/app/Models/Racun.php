@@ -10,7 +10,7 @@ class Racun extends Model
     use HasFactory;
     protected $fillable = [
         'pacijent_id',
-        'lek_jkl',
+        'lek_id',
         'datum_od',
         'datum_do',
     ];

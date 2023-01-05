@@ -12,6 +12,7 @@ class Lek extends Model
         'JKL',
         'naziv',
         'cena',
+        'strucni_naziv',
     ];
 
     public function racuni(){

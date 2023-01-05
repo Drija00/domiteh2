@@ -17,7 +17,10 @@ class PacijentFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'ime' => $this->faker->firstName(),
+            'prezime' => $this->faker->lastName(),
+            'datum_rodjenja' => $this->faker->date($format='Y-m-d',$max='now'),
+            'br_racuna' => $this->faker->numerify("#####"),
         ];
     }
 }

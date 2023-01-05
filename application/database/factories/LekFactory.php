@@ -17,7 +17,10 @@ class LekFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'JKL'=> $this->faker->numerify("######"),
+            'naziv'=> $this->faker->word(),
+            'cena' => $this->faker->randomDigit(),
+            'strucni_naziv'=> $this->faker->word(),
         ];
     }
 }
