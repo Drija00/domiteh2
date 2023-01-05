@@ -18,5 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('pacijent',[PacijentController::class,'index']);
 Route::get('pacijent/{id}',[PacijentController::class,'show']);
+Route::delete('pacijent/{id}',[PacijentController::class,'destroy']);
+Route::post('pacijent',[PacijentController::class,'store']);
+Route::put('pacijent/{id}',[PacijentController::class,'update']);
+
 Route::get('racun',[RacunController::class,'index']);
 Route::get('racun/{id}',[RacunController::class,'show']);
