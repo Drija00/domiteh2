@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PacijentController;
+use App\Http\Controllers\RacunController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('pacijent',[PacijentController::class,'index']);
+Route::get('pacijent/{id}',[PacijentController::class,'show']);
+Route::get('racun',[RacunController::class,'index']);
+Route::get('racun/{id}',[RacunController::class,'show']);
